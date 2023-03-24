@@ -34,7 +34,7 @@ let { limit, role, level, exp, premiumTime } = db.data.users[m.sender]
   let flaa = pickRandom(global.flaaaaa)
 await conn.sendButton(m.chat, `${bugmenu}\n`,wm + '\n\n' + botdate, `${flaa}bugmenu`, [['MENU','.menu']], m, {
 contextInfo: { externalAdReply :{ showAdAttribution: true,
-                        sourceUrl: 'https://youtube.com/@Putra_Modz_',
+                        sourceUrl: 'https://chat.whatsapp.com/FQH6CI63LJCBTySzClHrrg',
                         mediaType: 2,
                         description: `anu`,
                         title: `${ucapan()} ${name}`,

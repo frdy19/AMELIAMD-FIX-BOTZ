@@ -26,17 +26,17 @@ let ucpn = `${ucapan()}`
 let name = conn.getName(m.sender)
 
 //sewa
-let sh = '5'
-let sn = '15'
-let ss = '30'
-let sp = '35'
-let sv = '65'
+let sh = '1'
+let sn = '2'
+let ss = '5'
+let sp = '7'
+let sv = '10'
 //premium
-let ph = '5'
-let pn = '10'
-let pp = '40'
-let pv = '50'
-let ppm = '70'
+let ph = '1'
+let pn = '3'
+let pp = '7'
+let pv = '12'
+let ppm = '20'
 let wibb = `${wktuwib}`
 
 let info = 

@@ -43,15 +43,15 @@ const defaultMenu = {
 │╰────────────────···
 ╰──────────═┅═──────────
 
-⃝▣──「 *INFO CMD* 」───⬣
+❏──「 *INFO CMD* 」───⬣
 │ *Ⓟ* = Premium
 │ *Ⓛ* = Limit
-▣────────────⬣
+❏────────────⬣
 %readmore
 `.trimStart(),
-  header: '⃝▣──「 %category 」───⬣',
+  header: '❏──「 %category 」───❏',
   body: `${emot} %cmd %isPremium %islimit`,
-  footer: '▣───────────⬣\n',
+  footer: '❏───────────❏\n',
   after: `%c4 %me`,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args, usedPrefix, command}) => {
@@ -364,7 +364,7 @@ const sections = [
         {title: `ℹ️ ${pmenus} Info`, rowId: ".? info", description: "Info info BOT"},
         {title: `👩‍💻 ${pmenus} Owner`, rowId: ".? owner", description: "Owner Only!"},
         {title: `❓ ${pmenus} No Category`, rowId: ".? nocategory", description: "Fitur tanpa kategory!"},
-       {title: `⏲️ ${pmenus} SUBSCRIBE YT`, rowId: ".zyko-md", description: "Jangan Lupa Subscribe yt Amelia-MD official 🌝"},
+       {title: `⏲️ ${pmenus} SUBSCRIBE YT`, rowId: ".zyko-md", description: "🌝"},
         ]
         },
 ]
@@ -379,21 +379,21 @@ let tek = `✧────···[ Dashboard ]···────✧
 ├❖  Terima Kasih Telah Menggunakan Bot Kami
 │
 ├━━━━━━━━━━━━━━━━┈─⋆
-│  「 *U s e r  I n f o 克* 」
+│  「 *U S E R - I N F O* 」
 │${emot} *ɴᴀᴍᴇ:* ${usrs.registered ? usrs.name : conn.getName(m.sender)}
 │${emot} *ᴛᴀɢs:* @${m.sender.split`@`[0]}
 │${emot} *sᴛᴀᴛᴜs:* ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
 │${emot} *ᴘʀᴇᴍɪᴜᴍ:* ${usrs.premiumTime > 1 ? 'Yes': 'No'}
 │
 ├━━━━━━━━━━━━━━━━┈─⋆
-│  「 *S t a t u s  I n f o 比* 」
+│  「 *S T A T U S - I N F O* 」
 │${emot} *ᴛɪᴍᴇ:* ${moment.tz('Asia/Jakarta').format('HH')} H  ${moment.tz('Asia/Jakarta').format('mm')} M  ${moment.tz('Asia/Jakarta').format('ss')} S
 │${emot} *ᴜsᴇʀs:* ${Object.keys(global.db.data.users).length}
 │${emot} *ʟɪᴍɪᴛ:* ${usrs.limit}
 │${emot} *ʟᴇᴠᴇʟ:* ${usrs.level}
 │
 ├━━━━━━━━━━━━━━━━┈─⋆
-│  「 *I n f o   B o t 比* 」
+│  「 *I N F O - B O T* 」
 │${emot} Aktif selama ${mpt}
 │${emot} Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
 │${emot} Prefix : [ ${_p} ]
@@ -403,12 +403,12 @@ let tek = `✧────···[ Dashboard ]···────✧
 │
 ├━━━━━━━━━━━━━━━━┈─⋆
 │
-│ ▸ *Github :* https://github.com/Lucife-Putra
+│ ▸ *Github :* https://github.com/frdy19
 │ ▸ *ᴀᴜᴛʜᴏʀ :* ${nameown}
 ┴ ▸ *ᴏᴡɴᴇʀ :* ${nameown}
 ✧
 ┬ 📌 𝗣𝗶𝗻𝗻𝗲𝗱 :
-│ ʙᴇʀɪ ᴊᴇᴅᴀ ʏᴀʜ ᴋᴀᴋ ^ω^
+│ ʙᴇʀɪ ᴊᴇᴅᴀ ʏᴀʜ ᴋᴀᴋ
 │
 ├━━━━━━━━━━━━━━━━┈─⋆
 │${emot} *ʀᴏʟᴇ:* ${usrs.role}${usrs.premiumTime > 1 ? `
@@ -420,7 +420,7 @@ const listMessage = {
   footer: `📮 *Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada Owner\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ ${nameown}\n\n${botdate}\n\n${wm2}`,
   mentions: await conn.parseMention(tek),
   title: ``,
-  buttonText: `☂️ LIST MENU ☂️`, 
+  buttonText: `List Menu`, 
   sections
 }
   if (teks == '404') {

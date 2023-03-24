@@ -20,23 +20,21 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 //------------ BIO
 let ppown = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image').catch(_ => hwaifu[1]) 
 let teksbio = `${htki} *BIODATA* ${htka}
-${htjava} *💌 Nama* : PutraModz
-${htjava} *✉️ Nama RL* : HAMBA ALLAH
+${htjava} *💌 Nama* : Ferdi Firmansyah
 ${htjava} *♂️ Gender* : Boys
 ${htjava} *🕋 Agama* : Islam
-${htjava} *⏰ Tanggal lahir* : Private 🥶
-${htjava} *🎨 Umur* : 19
-${htjava} *🧮 Kelas* : 3 SMK
-${htjava} *🧩 Hobby* : MODIFIKASI WHATSAPP "MODDER WHATSAPP"
+${htjava} *⏰ Tanggal lahir* : 07 Agustus 2004
+${htjava} *🎨 Umur* : 18
+${htjava} *🧮 Kelas* : 12 SMA
+${htjava} *🧩 Hobby* : Ngoding + Basket
 ${htjava} *💬 Sifat* : NOTHING
-${htjava} *🗺️ Tinggal* : Indo, Kuningan, Jawa Barat
-${htjava} *❤️ Pacar* : AMELIA PUTRI SEPTIANY 🥰
+${htjava} *🗺️ Tinggal* : Indo, Banjarmasin, Kalsel
 
 ${htjava} *📷 ɪɴsᴛᴀɢʀᴀᴍ* : ${sig}
 ${htjava} *🐈 ɢɪᴛʜᴜʙ:* ${sgh}
 •·––––––––––––––––––––––––––·•
 `
-  let teks = 'Pilih dibawah kak ! o(〃＾▽＾〃)o'
+  let teks = 'Pilih dibawah kak !'
 const sections = [
    {
 	title: `${htjava} OWNER –––––––––·•`,
